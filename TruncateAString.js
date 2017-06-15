@@ -11,11 +11,9 @@ function truncateString(str, num) {
   
     for (i in str) {
       if (str.charAt(i) == ' ') spacePlace = i; 
-
       if (i >= num) break;
     }
 
-    
     
     if (!spacePlace || spacePlace >= num) {
       str = str.substr(0, num) + '...';
@@ -23,9 +21,6 @@ function truncateString(str, num) {
       str = str.substr(0, spacePlace) + '...';
     }
   }
-  
-  
-  
   
   return str;
 }
